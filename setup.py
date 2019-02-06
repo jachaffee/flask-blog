@@ -10,11 +10,3 @@ setup(
         'Flask',
     ],
 )
-
-[tool:pytest]
-testpaths = tests
-
-[coverage:run]
-branch = True
-source =
-    flaskr
