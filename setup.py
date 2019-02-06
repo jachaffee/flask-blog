@@ -1,3 +1,5 @@
+from setuptools import find_packages, setup
+
 setup(
     name='flaskr',
     version='1.0.0',
@@ -8,3 +10,11 @@ setup(
         'Flask',
     ],
 )
+
+[tool:pytest]
+testpaths = tests
+
+[coverage:run]
+branch = True
+source =
+    flaskr
